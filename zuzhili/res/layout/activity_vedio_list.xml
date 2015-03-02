@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+        <ListView
+            android:id="@+id/vedio_list_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1.0dip"
+            android:divider="@color/divider_grey_line"
+            android:cacheColorHint="@color/transparent"
+            android:background="@color/white"
+             >
+        </ListView>
+
+</LinearLayout>

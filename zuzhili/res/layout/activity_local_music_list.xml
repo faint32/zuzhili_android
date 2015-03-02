@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/llParent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/music_list"
+            android:layout_width="fill_parent"
+            android:dividerHeight="1.0dip"
+            android:divider="#dedede"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:background="#ffffff"></ListView>
+
+
+        <com.zuzhili.ui.views.QuerySideBar
+            android:id="@+id/query_bar"
+            android:layout_width="30dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"></com.zuzhili.ui.views.QuerySideBar>
+    </FrameLayout>
+
+</LinearLayout>

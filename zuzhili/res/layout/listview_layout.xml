@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/page_bg">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/empty"
+        android:text="@string/empty"/>
+
+    <!-- requiresFadingEdge may have performance problem in some low price phones, but I like it.
+       use overScrollMode to disable blue boundaries at the top and the bottom of listview
+       because it is pull to refresh listview-->
+
+    <com.zuzhili.ui.views.PullRefreshListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fastScrollEnabled="false"
+        android:id="@+id/listView"
+        android:layout_gravity="center"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true"
+        android:dividerHeight="7.5dip"
+        android:divider="@color/dark_grey"
+        android:visibility="visible"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false"
+        android:overScrollMode="never"/>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/progressbar"
+        android:visibility="gone"/>
+
+    <SearchView
+        android:id="@+id/quickReturnTopTarget"
+        android:gravity="center"
+        android:textColor="#efefef"
+        android:textSize="18sp"
+        android:iconifiedByDefault="false"
+        android:background="@color/page_bg"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/sticky_height"/>
+
+</FrameLayout>
+

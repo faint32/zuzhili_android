@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshExpandableListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:PullToRefresh="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fastScrollEnabled="false"
+    android:id="@+id/exp_list_view"
+    android:layout_gravity="center"
+    android:scrollingCache="true"
+    android:smoothScrollbar="true"
+    android:choiceMode="singleChoice"
+    android:cacheColorHint="@android:color/transparent"
+    android:divider="@null"
+    android:dividerHeight="0dip"
+    android:visibility="visible"
+    PullToRefresh:ptrShowIndicator="false"
+    PullToRefresh:ptrOverScroll="true"
+    android:overScrollMode="never" />

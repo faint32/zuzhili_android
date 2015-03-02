@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rla_group_name_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tag_group_name"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/font_size_l" />
+
+        <TextView
+            android:paddingLeft="10dip"
+            android:id="@+id/txt_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:maxEms="11"
+            android:singleLine="true"
+            android:ellipsize = "end"
+            android:clickable="true"
+            android:textColor="@color/light_grey"
+            android:textSize="@dimen/font_size_m" />
+
+    </RelativeLayout>
+    <!--<RelativeLayout
+        android:id="@+id/rla_group_permission_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tag_group_declared"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/font_size_l" />
+
+        <EditText
+            android:id="@+id/txt_group_declared"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:clickable="true"
+            android:hint="@string/tag_group_declared_hint"
+            android:textColor="@color/light_grey"
+            android:textSize="@dimen/font_size_m" />
+
+    </RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/rla_chat_notification_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/new_msg_notification"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/font_size_l" />
+
+        <Switch
+            android:id="@+id/switcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_clear_chat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:text="@string/new_msg_clear"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/font_size_l" />
+    <Button
+        android:id="@+id/btn_dissolve_group"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/quit_red_selector"
+        android:text="@string/dissovle_group"
+        android:textColor="@color/white" />
+
+</LinearLayout>

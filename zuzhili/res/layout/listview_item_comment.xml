@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:descendantFocusability="afterDescendants">
+
+    <ImageView
+        android:id="@+id/img_user_head"
+        android:layout_width="45dip"
+        android:layout_height="45dip" />
+
+    <RelativeLayout
+        android:id="@+id/rla_name_time"
+        android:layout_toRightOf="@+id/img_user_head"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="10dip">
+
+        <TextView
+            android:id="@+id/txt_user_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/font_size_m" />
+
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/font_size_s" />
+
+        <ImageView
+            android:id="@+id/image_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/image_comment"/>
+
+        <ImageView
+            android:id="@+id/comment_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/image_comment"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:background="@drawable/comment_delete"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/rla_content"
+        android:layout_below="@+id/img_user_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:maxLength="100"
+        android:ellipsize="end"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/font_size_m" />
+</RelativeLayout>

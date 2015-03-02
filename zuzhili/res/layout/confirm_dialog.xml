@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="@drawable/dialog_broader"
+    >
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+   	 	android:layout_height="wrap_content" 
+   	 	android:layout_marginTop="30dp"
+   	 	android:layout_marginBottom="30dp"
+   	 	android:gravity="center"
+   	 	android:textSize="15sp"
+   	 	android:textColor="@color/zuzhili_common_blue"
+        />
+    
+    <ImageView
+       android:layout_width="fill_parent"
+       android:layout_height="1dp"
+       android:layout_marginLeft="2dp"
+       android:layout_marginRight="2dp"
+       android:background="@color/divide_line"
+       android:contentDescription="@null" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_button_selector"
+            android:textColor="@color/dialog_button_text"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:contentDescription="@null"
+            android:src="@color/divide_line" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_button_selector"
+            android:textColor="@color/dialog_button_text"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

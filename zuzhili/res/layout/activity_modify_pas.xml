@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/foreground_item_grey"
+    android:orientation="vertical" >
+
+    <EditText
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:paddingLeft="7.5dp"
+        android:id="@+id/old_passwordtxt"
+        android:layout_width="fill_parent"
+        android:layout_height="37dip"
+        android:layout_marginTop="24dip"
+        android:textSize="17sp"
+        android:background="@drawable/edit_text_backgroud"
+        android:hint="@string/old_password"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColorHint="@color/text_tint" />
+
+    <EditText
+        android:id="@+id/new_passwordtxt"
+        android:layout_width="fill_parent"
+        android:layout_height="37dip"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:paddingLeft="7.5dp"
+        android:background="@drawable/edit_text_backgroud"
+        android:hint="@string/new_password"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColorHint="@color/text_tint" />
+
+    <EditText
+        android:id="@+id/repeat_newpasswordtxt"
+        android:layout_width="fill_parent"
+        android:layout_height="37dip"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="14dp"
+        android:paddingLeft="7.5dp"
+        android:background="@drawable/edit_text_backgroud"
+        android:hint="@string/repeat_new_password"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColorHint="@color/text_tint" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="37dip"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/blue_btn_selector"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+</LinearLayout>

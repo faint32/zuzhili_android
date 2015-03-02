@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/filter_dialog_background"
+    android:gravity="center_horizontal" >
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="18dp"
+        android:paddingTop="16dp"
+        android:text="@string/dialog_filter_top_title"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_below="@+id/txt_title"
+        android:background="@color/zuzhili_common_blue"
+        android:contentDescription="@null" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divide_line"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/lin_row_one_btns"
+            style="@style/newsFilterDialog"
+            android:layout_height="25dp"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp" >
+
+            <Button
+                android:id="@+id/btn_news_my_focus"
+                android:text="@string/news_my_focus"
+                style="@style/firstLevelFilterButtonStyle" />
+
+            <Button
+                android:id="@+id/btn_news_all"
+                android:text="@string/news_all"
+                style="@style/firstLevelFilterButtonStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_row_two_btns"
+            android:layout_below="@id/lin_row_one_btns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp" >
+
+            <Button
+                android:id="@+id/btn_filter_all"
+                android:text="@string/news_filter_all"
+                style="@style/circleFilterButtonStyle" />
+
+            <Button
+                android:id="@+id/btn_filter_text"
+                android:text="@string/news_filter_word"
+                style="@style/circleFilterButtonStyle" />
+
+            <Button
+                android:id="@+id/btn_filter_pics"
+                android:text="@string/news_filter_pic"
+                style="@style/circleFilterButtonStyle" />
+
+            <Button
+                android:id="@+id/btn_filter_files"
+                android:text="@string/news_filter_file"
+                style="@style/circleFilterButtonStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_row_three_btns"
+            android:layout_below="@id/lin_row_two_btns"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="7.5dp" >
+
+            <Button
+                android:id="@+id/btn_filter_music"
+                android:text="@string/news_filter_music"
+                style="@style/circleFilterButtonStyle" />
+
+            <Button
+                android:id="@+id/btn_filter_video"
+                android:text="@string/news_filter_vedio"
+                style="@style/circleFilterButtonStyle" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/divide_hori_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/lin_row_three_btns"
+            android:layout_marginTop="13dp"
+            android:background="@color/bottom_line"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:id="@+id/lin_bottom_btns"
+            style="@style/newsFilterDialog"
+            android:layout_height="40dp"
+            android:layout_below="@+id/divide_hori_line" >
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:text="@string/confirm"
+                style="@style/bottomButtonStyle" />
+
+            <ImageView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/bottom_line"
+                android:contentDescription="@null" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:text="@string/cancel"
+                style="@style/bottomButtonStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

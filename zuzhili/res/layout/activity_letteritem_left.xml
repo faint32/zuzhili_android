@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/txt_chat_time_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:textColor="@color/more_trans"
+        android:textSize="@dimen/font_size_m"/>
+
+    <ImageView
+        android:id="@+id/img_userhead"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/lin_content"
+        android:layout_marginLeft="10dip"
+        android:src="@drawable/default_user_head_small"/>
+
+    <LinearLayout
+        android:id="@+id/lin_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_chat_time_l"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@id/img_userhead"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_sender_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="10dp"
+            android:text="name of sender"
+            android:textColor="@color/light_grey"
+            android:textSize="13sp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/frl_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/msg_sendfrom_done_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <com.zuzhili.ui.views.FaceTextView
+                    android:id="@+id/item_msglist_text_l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:lineSpacingExtra="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/more_trans"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:id="@+id/voice_chat_recd_tv_l"
+                    android:layout_width="17dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/item_msglist_img_l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="13dp"
+                android:layout_toRightOf="@+id/lin_content">
+
+                <ProgressBar
+                    android:id="@+id/progressbar_upload_l"
+                    style="?android:progressBarStyleSmallInverse"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+
+
+                <ImageView
+                    android:id="@+id/img_warn_l"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/warnicon"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/voice_content_len_l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3.0dip"
+                    android:shadowColor="#80ffffff"
+                    android:shadowDx="1.4"
+                    android:shadowDy="1.4"
+                    android:shadowRadius="1.0"
+                    android:text="3&apos;&apos;"
+                    android:textColor="@color/more_trans"
+                    android:textSize="12.0sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

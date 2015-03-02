@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rla_trend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <FrameLayout
+            android:id="@+id/fla_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_top_indi"
+                android:layout_width="32dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:background="@drawable/icon_top_indicator"/>
+
+            <TextView
+                android:id="@+id/txt_trend_title"
+                style="@style/trendTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fla_container2"
+            android:layout_below="@+id/fla_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_top_indi2"
+                android:layout_width="32dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:background="@drawable/icon_top_indicator"/>
+
+            <TextView
+                android:id="@+id/txt_trend_content"
+                style="@style/trendContentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_trend_images_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fla_container2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/img_trend_image1"
+                style="@style/trendImageStyle"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_trend_image2"
+                style="@style/trendImageStyle"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="2.5dp"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_trend_image3"
+                style="@style/trendImageStyle"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="2.5dp"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rla_trend_attachment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fla_container2"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/txt_trend_attachment1"
+                style="@style/attachmentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_trend_attachment2"
+                style="@style/attachmentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txt_trend_attachment1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_trend_attachment3"
+                style="@style/attachmentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txt_trend_attachment2"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_trend_attachment4"
+                style="@style/attachmentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txt_trend_attachment3"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_trend_attachment5"
+                style="@style/attachmentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txt_trend_attachment4"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 动态的发布位置 -->
+
+    <TextView
+        android:id="@+id/txt_trend_publish_position"
+        style="@style/trendPublishPostion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rla_trend"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

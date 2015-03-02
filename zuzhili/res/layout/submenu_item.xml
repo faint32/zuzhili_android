@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zuzhili="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.zuzhili.ui.views.MenuView
+        android:id="@+id/submenu"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        zuzhili:backgroundDrawable="@drawable/submenu_item_selector"
+        zuzhili:textColor="@color/white"
+        zuzhili:textSize="@dimen/submenu_text_size"
+        zuzhili:showDivider="false"
+        />
+</LinearLayout>

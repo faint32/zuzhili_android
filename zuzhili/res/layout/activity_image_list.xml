@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <GridView
+        android:id="@+id/image_list_gv"
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="8dp"
+		android:layout_marginTop="8dip"
+		android:layout_marginRight="8dp"
+        android:layout_marginBottom="60.0dip"
+        android:fadingEdge="none"
+        android:gravity="center"
+        android:horizontalSpacing="8dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="8dp" >
+    </GridView>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="70dp"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textSize="15.0sp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:layout_alignParentBottom="true"
+        android:background="#75000000"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressbar"
+        android:visibility="gone"/>
+</RelativeLayout>

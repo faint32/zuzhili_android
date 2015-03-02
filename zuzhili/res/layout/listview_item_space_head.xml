@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/page_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="10.0dip"
+                android:layout_alignBottom="@+id/btn_apply"
+                android:layout_marginTop="10.0dip" />
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/img_avatar"
+                android:id="@+id/lin_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:layout_alignLeft="@+id/btn_apply"
+                android:layout_alignRight="@+id/btn_apply"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/personal_space_ln"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_person_detail"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/submenu_item_selector"
+                            android:drawableTop="@drawable/icon_personal_detail"
+                            android:gravity="center"
+                            android:text="@string/personal_resource"
+                            android:textColor="@color/text_black"
+                            android:textSize="16.0sp" />
+
+                        <Button
+                            android:id="@+id/btn_fans"
+                            android:layout_width="0.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/submenu_item_selector"
+                            android:gravity="center"
+                            android:text="@string/fans"
+                            android:textColor="@color/text_black"
+                            android:textSize="16.0sp" />
+
+                        <Button
+                            android:id="@+id/btn_followers"
+                            android:layout_width="0.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/submenu_item_selector"
+                            android:gravity="center"
+                            android:text="@string/followers"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/font_size_m" />
+                    </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_apply"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10.0dip"
+                android:layout_toRightOf="@+id/img_avatar"
+                android:layout_below="@+id/lin_buttons"
+                android:background="@drawable/shape_follow_positive_default"
+                android:gravity="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="@dimen/font_size_m" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_marginTop="10.0dip"
+            android:visibility="visible"
+            android:background="@color/divide_line_grey" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_personal_detail"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/submenu_item_selector"
+                android:gravity="center"
+                android:text="@string/personal_resource"
+                android:visibility="gone"
+                android:textColor="@color/text_black"
+                android:drawableRight="@drawable/vertical_divide_line"
+                android:textSize="@dimen/font_size_m" />
+
+
+            <Button
+                android:id="@+id/btn_file_library"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/submenu_item_selector"
+                android:gravity="center"
+                android:text="@string/file_library"
+                android:visibility="gone"
+                android:drawableRight="@drawable/vertical_divide_line"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/font_size_m" />
+
+            <Button
+                android:id="@+id/btn_collect"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/submenu_item_selector"
+                android:drawableRight="@drawable/vertical_divide_line"
+                android:gravity="center"
+                android:text="@string/collect"
+                android:visibility="gone"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/font_size_m" />
+
+            <Button
+                android:id="@+id/btn_album"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/submenu_item_selector"
+                android:drawableRight="@drawable/vertical_divide_line"
+                android:gravity="center"
+                android:text="@string/pictures"
+                android:visibility="gone"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/font_size_m" />
+
+            <Button
+                android:id="@+id/btn_audio"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/submenu_item_selector"
+                android:drawableRight="@drawable/vertical_divide_line"
+                android:gravity="center"
+                android:text="@string/audio"
+                android:visibility="gone"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/font_size_m" />
+
+            <Button
+                android:id="@+id/btn_video"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/submenu_item_selector"
+                android:drawableRight="@drawable/vertical_divide_line"
+                android:gravity="center"
+                android:text="@string/video"
+                android:visibility="gone"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/font_size_m" />
+
+            <Button
+                android:id="@+id/btn_todo"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/submenu_item_selector"
+                android:drawableRight="@drawable/vertical_divide_line"
+                android:gravity="center"
+                android:text="@string/todo"
+                android:visibility="gone"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/font_size_m" />
+
+            <Button
+                android:id="@+id/btn_more"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/submenu_item_selector"
+                android:drawableRight="@drawable/vertical_divide_line"
+                android:gravity="center"
+                android:text="@string/more"
+                android:visibility="gone"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/font_size_m" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@color/divide_line_grey" />
+
+    <TextView
+        android:id="@+id/txt_total_count"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:background="@color/dark_grey"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:textColor="@color/text_color_in_dark_backgroud"
+        android:textSize="@dimen/font_size_m" />
+
+</LinearLayout>

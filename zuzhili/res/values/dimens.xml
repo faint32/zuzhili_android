@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- 字体大小 -->
+    <dimen name="font_size_xl">20sp</dimen>
+	<dimen name="font_size_l">18sp</dimen>
+	<dimen name="font_size_m">15sp</dimen>
+	<dimen name="font_size_s">12sp</dimen>
+	
+	<!-- action bar -->
+	<dimen name="actionbar_compat_height">48dp</dimen>
+    <dimen name="actionbar_compat_button_width">48dp</dimen>
+    <dimen name="actionbar_compat_button_home_width">56dp</dimen>
+
+    <dimen name="loading_view_margin_layout">10dp</dimen>
+    <dimen name="ccp_button_text_size">18sp</dimen>
+    <dimen name="primary_text_size">14sp</dimen>
+
+    <dimen name="sticky_height">60dp</dimen>
+    <dimen name="menu_name_padding">78.67dp</dimen>
+    <dimen name="menu_divider_padding">15.3dp</dimen>
+    <dimen name="menu_text_size">14sp</dimen>
+    <dimen name="submenu_text_size">17sp</dimen>
+
+
+</resources>

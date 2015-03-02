@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TabWidget Spec -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_tab"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <!-- icon -->
+    <ImageView
+        android:id="@+id/img_tab_widget_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="6dp" />
+
+    <View
+        android:id="@+id/view_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/img_tab_widget_icon"
+        android:layout_toRightOf="@id/img_tab_widget_icon" />
+
+    <!-- text -->
+    <TextView
+        android:id="@+id/txt_tab_widget_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_tab_widget_icon"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="6dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_s" />
+
+</RelativeLayout>

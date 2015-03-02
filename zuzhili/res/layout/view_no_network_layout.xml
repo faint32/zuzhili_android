@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/error_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center"
+            android:text="@string/error_message"
+            android:textColor="@color/text_dark_grey"
+            android:textSize="30.0sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reason"
+                android:textColor="@color/light_grey"
+                android:textSize="16.0sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/small_point"
+                    android:drawablePadding="5.0dip"
+                    android:text="@string/reason_hint_one"
+                    android:textColor="@color/light_grey"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.0dip"
+                    android:drawableLeft="@drawable/small_point"
+                    android:drawablePadding="5.0dip"
+                    android:text="@string/reason_hint_two"
+                    android:textColor="@color/light_grey"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.0dip"
+                    android:drawableLeft="@drawable/small_point"
+                    android:drawablePadding="5.0dip"
+                    android:text="@string/reason_hint_three"
+                    android:textColor="@color/light_grey"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="30.0dip"
+                android:background="@drawable/error_btn_bg"
+                android:drawableLeft="@drawable/refresh_button"
+                android:drawablePadding="5.0dip"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:text="@string/error_refresh"
+                android:textColor="@color/light_grey"
+                android:textSize="16.0sp" />
+
+            <Button
+                android:id="@+id/btn_set_network"
+                android:layout_width="wrap_content"
+                android:layout_height="30.0dip"
+                android:layout_marginLeft="50.0dip"
+                android:background="@drawable/error_btn_bg"
+                android:drawableLeft="@drawable/set_network_btn"
+                android:drawablePadding="5.0dip"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:text="@string/reset_network"
+                android:textColor="@color/light_grey"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

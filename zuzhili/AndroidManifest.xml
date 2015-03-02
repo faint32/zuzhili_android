@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.zuzhili"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="20141118"
+    android:versionName="0.6.6">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- for log -->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <!-- Required to register a SyncStatusObserver to display a "syncing..." progress indicator. -->
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <!-- Required to enable our SyncAdapter after it's created. -->
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <!-- Required because we're manually creating a new account. -->
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <application
+        android:name=".framework.TaskApp"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".draftbox.DraftBoxActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name=".draftbox.DraftContentProvider"
+            android:authorities="com.zuzhili.provider.draftbox" />
+
+        <activity
+            android:name=".ui.activity.GuideActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_guide"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".ui.activity.loginreg.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"></activity>
+        <activity
+            android:name=".ui.activity.social.SocialManagerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"></activity>
+        <activity
+            android:name=".ui.activity.comment.CommentEditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".ui.activity.HomeTabActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.FourthCategoryListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.more.ModifyPasActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.more.FeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.more.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.publish.PublishMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.publish.PublishFileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.publish.PublishImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.publish.PublishMusicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.publish.PublishVedioActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.publish.PublishWriteActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.activity.publish.PublishApprovalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.loginreg.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.loginreg.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.loginreg.CheckphoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.social.SocialsActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.social.ConstructSociaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.publish.AlbumListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.multiselect.ImageBucketListAvtivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.multiselect.ImageGridActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.publish.ImageEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.publish.CreateAlbumActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.publish.MultiFolderListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.publish.CreateFolderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.multiselect.MusicListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.publish.FileEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.multiselect.VedioListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.multiselect.FileListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".ui.activity.publish.FileFolderListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.trendrelated.TrendDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.article.ArticleDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.space.SpaceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.im.AddContactsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ui.activity.im.GroupChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
+        <activity
+            android:name=".ui.activity.im.GroupsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.im.ChatRoomSettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.im.ForwardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.PhoneContactsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.space.PersonalDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.multiselect.FileBrowserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.im.GalleryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.im.ShowImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.im.ImageBrowserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ImageTheme" />
+        <activity
+            android:name=".ui.activity.publish.BigImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ImageTheme" />
+        <activity
+            android:name=".ui.activity.space.PhotoCommentActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.GetIMDataIntentService"
+            android:exported="false"></service>
+        <service
+            android:name="com.hisun.phone.core.voice.CCPService"
+            android:exported="false" />
+        <!-- for upgrade use -->
+        <meta-data
+            android:name="debug"
+            android:value="true" />
+
+        <activity
+            android:name=".ui.activity.GroupsQueryActivity"
+            android:label="@string/title_activity_groups"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ui.activity.im.NewConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".ui.activity.space.CommonSpaceActivity"
+            android:label="@string/title_activity_common_space"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ui.fragment.im.ContactListActivity"
+            android:label="@string/title_activity_contact_list"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ui.activity.space.CommonTrendActivity"
+            android:label="@string/title_activity_common_trend"></activity>
+
+        <!--
+        ContentProvider to store data.
+
+        The "authorities" here are defined as part of a ContentProvider interface. It's used here
+        as an attachment point for the SyncAdapter. See res/xml/syncadapter.xml and
+        SyncService.java.
+
+        Since this ContentProvider is not exported, it will not be accessible outside of this app's
+        package.
+        -->
+        <provider
+            android:name=".provider.DataProvider"
+            android:authorities="com.zuzhili"
+            android:exported="false" />
+
+        <!--
+        This service implements our SyncAdapter. It needs to be exported, so that the system
+        sync framework can access it.
+        -->
+        <service
+            android:name=".service.SyncService"
+            android:exported="true">
+
+            <!--
+            This intent filter is required. It allows the system to launch our sync service
+            as needed.
+            -->
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <!-- This points to a required XML file which describes our SyncAdapter. -->
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter" />
+        </service>
+
+        <!--
+        This implements the account we'll use as an attachment point for our SyncAdapter. Since
+        our SyncAdapter doesn't need to authenticate the current user (it just fetches a public RSS
+        feed), this account's implementation is largely empty.
+
+        It's also possible to attach a SyncAdapter to an existing account provided by another
+        package. In that case, this element could be omitted here.
+        -->
+        <service android:name=".service.GenericAccountService">
+
+            <!-- Required filter used by the system to launch our account service. -->
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <!-- This points to an XMLf ile which describes our account service. -->
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+
+        <meta-data
+            android:name="third_package_flag"
+            android:value="true" />
+
+    </application>
+
+</manifest>

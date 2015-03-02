@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/submenu_item_selector"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+    <ImageView
+        android:id="@+id/img_group_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/txt_count_in_group"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/img_group_avatar"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txt_contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:maxWidth="160dp"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/font_size_m"/>
+
+        <ImageView
+            android:id="@+id/button_make_call"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/make_call"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/button_group_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/icon_chat"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/button_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/enter"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

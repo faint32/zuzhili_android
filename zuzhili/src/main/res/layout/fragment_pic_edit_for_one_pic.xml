@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:background="#FF000000">
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/weibo_detail_bottom"
+        >
+        <ImageButton
+            android:id="@+id/toolbar_cancel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/picture_b04"
+            android:background="@drawable/relative_selector"
+            />
+        <ImageButton
+            android:id="@+id/toolbar_turnleft"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/picture_b02"
+            android:background="@drawable/relative_selector"
+            />
+        <ImageButton
+            android:id="@+id/toolbar_turnright"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/picture_b03"
+            android:background="@drawable/relative_selector"
+            />
+        <ImageButton
+            android:id="@+id/toolbar_ok"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/picture_b01"
+            android:background="@drawable/relative_selector"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/toolbar_lin"
+        android:scaleType="matrix"
+        />
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/view_initator"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        layout="@layout/view_approval_initator" />
+
+    <ScrollView
+        android:id="@+id/sv_view_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bt_group"
+        android:layout_below="@+id/view_initator"
+        android:background="@color/news_item_divider" >
+
+        <include
+            android:id="@+id/view_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/view_approval_content_and_comments" />
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bt_group"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/news_item_divider" >
+
+        <LinearLayout
+            android:id="@+id/ll_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/bt_approval_yes"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_check_blue_rect_selector"
+                android:text="@string/approval_yes"
+                android:textColor="@color/black" />
+            <Button
+                android:id="@+id/bt_approval_no"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_check_blue_rect_selector"
+                android:text="@string/approval_no"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_approval_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_check_blue_rect_selector"
+            android:text="@string/approval_edit"
+            android:textColor="@color/webo_text_color"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

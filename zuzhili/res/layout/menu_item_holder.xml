@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zuzhili="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.zuzhili.ui.views.MenuView
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        zuzhili:backgroundDrawable="@drawable/menu_item_background"
+        zuzhili:textColor="@color/menu_name_selector"
+        zuzhili:textSize="@dimen/menu_text_size"
+        zuzhili:showDivider="true"
+        zuzhili:dividerDrawable="@drawable/divider_line_transparent"
+        />
+</LinearLayout>

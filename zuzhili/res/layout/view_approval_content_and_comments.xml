@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/news_item_divider" >
+
+    <RelativeLayout
+        android:id="@+id/contents"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/foreground_item_grey"
+        android:paddingBottom="9dp"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp" >
+
+        <TextView
+            android:id="@+id/content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7.5dp"
+            android:maxLines="2"
+            android:textColor="@color/zuzhili_blue"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/content"
+            style="@style/weibo_text_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content_title"
+            android:layout_marginTop="7.5dip"
+            android:maxLines="7"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/fujian_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content"
+            android:background="@drawable/contents_bg"
+            android:paddingBottom="9dip"
+            android:paddingTop="9dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/fujian_1"
+                style="@style/weibo_text_fujian"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/fujian_2"
+                style="@style/weibo_text_fujian"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/fujian_1"
+                android:layout_marginTop="5dip"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/fujian_3"
+                style="@style/weibo_text_fujian"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/fujian_2"
+                android:layout_marginTop="5dip"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/fujian_4"
+                style="@style/weibo_text_fujian"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/fujian_3"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/fujian_5"
+                style="@style/weibo_text_fujian"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/fujian_4"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttom_down_one"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/contents"
+        android:background="@color/foreground_item_grey"
+        android:orientation="horizontal" >
+        
+        <ImageView
+            android:id="@+id/iv_divide_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/two_layer_line"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/from_one"
+            style="@style/weibo_text_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="9dp"
+            android:layout_centerVertical="true"
+            android:text="@string/approval_from" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="9dp"
+            android:layout_centerVertical="true"
+            android:text="@string/news_time"
+            android:textColor="@color/light_grey"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/two_layer_line"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttom_down_one"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:text="@string/approval_records"
+        android:textColor="@color/text_color_in_dark_backgroud"
+        android:textSize="12sp" />
+
+    <com.zuzhili.ui.views.PullRefreshListView
+        android:id="@+id/lv_approval_commment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/two_layer_line"
+        android:dividerHeight="2dp"
+        android:headerDividersEnabled="false" />
+
+</RelativeLayout>

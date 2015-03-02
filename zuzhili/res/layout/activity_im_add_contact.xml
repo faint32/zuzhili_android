@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/page_bg">
+
+    <!-- requiresFadingEdge may have performance problem in some low price phones, but I like it.
+       use overScrollMode to disable blue boundaries at the top and the bottom of listview
+       because it is pull to refresh listview-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/rla_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sticky_height"
+            android:background="@drawable/navi_bar_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="gone">
+
+            <com.zuzhili.ui.views.gridview.TwoWayGridView
+                android:id="@+id/gridView"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                app:columnWidth="50dp"
+                app:gravity="center"
+                app:horizontalSpacing="1dp"
+                app:numColumns="auto_fit"
+                app:numRows="1"
+                app:rowHeight="40dp"
+                app:scrollDirectionLandscape="horizontal"
+                app:stretchMode="spacingWidthUniform"
+                app:scrollDirectionPortrait="horizontal"/>
+
+            <EditText
+                android:id="@+id/topEdittext"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="10.0dip"
+                android:hint="搜索"
+                android:drawableLeft="@drawable/icon_action_search"
+                android:drawablePadding="10dp"
+                android:textColor="@color/text_black"
+                android:layout_weight="1"
+                android:textSize="@dimen/font_size_m"/>
+        </LinearLayout>
+
+
+        <SearchView
+            android:id="@+id/quickReturnTopTarget"
+            android:gravity="center"
+            android:textColor="#efefef"
+            android:textSize="18sp"
+            android:iconifiedByDefault="false"
+            android:background="@color/page_bg"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/rla_container"
+            android:visibility="visible"
+            android:layout_height="@dimen/sticky_height"/>
+
+        <com.zuzhili.ui.views.PullRefreshListView
+            android:id="@+id/grouplistView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quickReturnTopTarget"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:scrollingCache="true"
+            android:smoothScrollbar="true"
+            android:visibility="visible"/>
+
+        <com.zuzhili.ui.views.PullRefreshListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grouplistView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:scrollingCache="true"
+            android:smoothScrollbar="true"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_alphabetic_hint"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_gravity="center"
+        android:background="@drawable/show_head_toast_bg"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:visibility="invisible"/>
+
+    <com.zuzhili.ui.views.SideBar
+        android:id="@+id/sidebar"
+        android:layout_width="30.0dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="50dp"
+        android:visibility="visible"/>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</FrameLayout>
+

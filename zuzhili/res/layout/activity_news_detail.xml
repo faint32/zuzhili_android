@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dark_grey"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <com.zuzhili.ui.views.PullRefreshListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:dividerHeight="0.5dp"
+            android:headerDividersEnabled="true" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0"
+        android:baselineAligned="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rla_action_comment"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/relative_selector">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/relative_selector"
+                android:drawableStart="@drawable/icon_action_comment"
+                android:drawableLeft="@drawable/icon_action_comment"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/action_comment"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_s" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rla_action_repost"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/relative_selector">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:drawableStart="@drawable/icon_action_repost"
+                android:drawableLeft="@drawable/icon_action_repost"
+                android:gravity="center"
+                android:text="@string/action_repost"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_s" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rla_action_collect"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:visibility="visible"
+            android:background="@drawable/relative_selector">
+
+            <TextView
+                android:id="@+id/collectTxt"
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:drawableStart="@drawable/icon_action_collect"
+                android:drawableLeft="@drawable/icon_action_collect"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/action_collect"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_s" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

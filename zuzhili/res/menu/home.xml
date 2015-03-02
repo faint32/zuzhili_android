@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zuzhili="http://schemas.android.com/apk/res-auto" >
+    <item android:id="@+id/menu_refresh"
+        android:title="@string/menu_refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:orderInCategory="2"
+        zuzhili:showAsAction="always" />
+    <item android:id="@+id/menu_search"
+          android:title="@string/menu_search"
+          android:icon="@drawable/ic_action_search"
+          android:orderInCategory="1"
+          zuzhili:showAsAction="ifRoom|collapseActionView"
+          zuzhili:actionViewClass="android.support.v7.widget.SearchView" />
+</menu>

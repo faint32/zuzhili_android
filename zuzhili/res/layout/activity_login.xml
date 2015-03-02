@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical"
+    android:paddingLeft="14dip"
+    android:paddingRight="14dip" >
+
+    <EditText
+        android:id="@+id/txt_login_username"
+        android:layout_width="fill_parent"
+        android:layout_height="37dip"
+        android:layout_marginTop="24dip"
+        android:textColor="@color/text_black"
+        style="@style/editTextCommonStyle"
+        android:hint="@string/input_account_hint"
+        android:text="18502785927"
+        android:imeOptions="actionNext" />
+
+    <EditText
+        android:id="@+id/txt_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="37dip"
+        android:layout_marginTop="14dip"
+        android:textColor="@color/text_black"
+        style="@style/editTextCommonStyle"
+        android:hint="@string/input_password_hint"
+        android:text="123456"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btn_login_login"
+        android:layout_width="fill_parent"
+        android:layout_height="37dip"
+        android:layout_marginTop="14dp"
+        style="@style/loginButtonCommonStyle"
+        android:text="@string/login"/>
+
+</LinearLayout>

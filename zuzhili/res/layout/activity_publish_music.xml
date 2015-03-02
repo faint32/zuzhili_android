@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lin_select_folder"
+        android:layout_width="fill_parent"
+        android:layout_height="42.5dp"
+        android:background="#4098bf"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:gravity="center_vertical"
+            android:text="@string/upload_to"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_folder_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3.0dip"
+            android:drawablePadding="10.0dip"
+            android:drawableRight="@drawable/arrow_white_right"
+            android:gravity="center_vertical"
+            android:text="@string/folder_select_hint"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <GridView
+            android:id="@+id/gd_music_selected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:listSelector="@color/transparent"
+            android:gravity="center"
+            android:stretchMode="columnWidth"
+            android:columnWidth="100dip"
+            android:numColumns="3"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:verticalSpacing="10.0dip" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_available_container"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:background="@color/transparent">
+
+        <CheckBox
+            android:id="@+id/cbx_available"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:text="@string/publish_priority_hint"
+            android:button="@drawable/just_available_for_member_selector"
+            android:textColor="#415d73"/>
+
+        <TextView
+            android:id="@+id/line_two"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/publish_write_divider_color"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

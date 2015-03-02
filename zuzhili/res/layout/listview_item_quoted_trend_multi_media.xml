@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/news_item_selector"
+    android:orientation="vertical" >
+
+    <include layout="@layout/listview_item_trend_header"/>
+    
+    <ImageView
+        android:id="@+id/head_divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2.5dp"
+        android:background="@drawable/two_layer_line"
+        android:contentDescription="@null" />
+    
+    <include layout="@layout/listview_item_quoted_trend_content_with_mutli_media"/>
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+        android:background="@drawable/two_layer_line"
+        android:contentDescription="@null" />
+    
+    <include layout="@layout/listview_item_trend_footer"/>
+	
+</LinearLayout>

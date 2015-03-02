@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rla_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/txt_chat_time_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:textColor="@color/more_trans"
+        android:textSize="@dimen/font_size_m" />
+
+    <ImageView
+        android:id="@+id/item_msglist_name_r"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignTop="@+id/lin_content_r"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:src="@drawable/default_user_head_small" />
+
+    <LinearLayout
+        android:id="@+id/lin_content_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_chat_time_r"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@+id/item_msglist_name_r"
+        android:gravity="center_vertical">
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp">
+
+            <ProgressBar
+                android:id="@+id/progressbar_upload_r"
+                style="?android:progressBarStyleSmallInverse"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_warn_r"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:src="@drawable/warnicon"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/voice_content_len_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="3&apos;&apos;"
+                android:padding="3.0dip"
+                android:shadowColor="#80ffffff"
+                android:shadowDx="1.4"
+                android:shadowDy="1.4"
+                android:shadowRadius="1.0"
+                android:textColor="@color/more_trans"
+                android:textSize="15.0sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frl_content_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/msg_sendto_done_bg"
+            android:clickable="true"
+            android:focusable="true">
+
+            <com.zuzhili.ui.views.FaceTextView
+                android:id="@+id/item_msglist_text_r"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:lineSpacingExtra="2dp"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/voice_chat_recd_tv_r"
+                android:layout_width="17dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|right"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/item_msglist_img_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

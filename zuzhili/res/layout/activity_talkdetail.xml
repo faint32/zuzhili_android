@@ -1,0 +1,192 @@
+<FrameLayout
+    android:id="@+id/im_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.zuzhili.ui.views.PagingListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:cacheColorHint="@android:color/transparent"
+            android:clickable="false"
+            android:divider="@null"
+            android:fadingEdge="none"/>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/view"/>
+
+        <RelativeLayout
+            android:id="@+id/rla_bottom_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="57dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_select_voice"
+                android:layout_width="27dip"
+                android:layout_height="27dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:visibility="visible"
+                android:background="@drawable/voice_btn_selector"/>
+
+            <Button
+                android:id="@+id/voice"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_toLeftOf="@+id/fr_send_msg"
+                android:layout_toRightOf="@+id/btn_select_voice"
+                android:layout_weight="1"
+                android:background="@drawable/speak_btn_selector"
+                android:text="@string/voice_send"
+                android:textColor="@color/light_grey"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <com.zuzhili.ui.views.CCPEditText
+                android:id="@+id/edit_input_box"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="15dp"
+                android:paddingRight="35dp"
+                android:layout_toLeftOf="@+id/fr_send_msg"
+                android:layout_toRightOf="@+id/btn_select_voice"
+                android:layout_weight="1.0"
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+                android:maxHeight="85.0dip"
+                android:minHeight="43.0dip"
+                android:textSize="14sp"
+                android:singleLine="false"/>
+
+            <Button
+                android:id="@+id/btn_select_face"
+                android:layout_width="27dip"
+                android:layout_height="27dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_toLeftOf="@+id/fr_send_msg"
+                android:background="@drawable/face_btn_selector"
+                android:visibility="visible"/>
+
+            <FrameLayout
+                android:id="@+id/fr_send_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <Button
+                    android:id="@+id/btn_send_msg"
+                    android:layout_width="40dp"
+                    android:layout_height="27dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dip"
+                    android:background="@drawable/btn_add_user_selector"
+                    android:gravity="center"
+                    android:text="@string/send"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btn_expand_bottom"
+                    android:layout_width="26dip"
+                    android:layout_height="26dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dip"
+                    android:background="@drawable/add_btn_selector"
+                    android:visibility="visible"/>
+            </FrameLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/view"/>
+        <RelativeLayout
+            android:id="@+id/rla_hided_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="12dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="25dp"
+                android:drawablePadding="8dip"
+                android:drawableTop="@drawable/btn_tupian_selector"
+                android:gravity="center"
+                android:text="@string/photo"
+                android:textColor="@color/more_trans"
+                android:textSize="@dimen/font_size_s"/>
+
+            <TextView
+                android:id="@+id/photograph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:drawablePadding="8dip"
+                android:layout_toRightOf="@+id/photo"
+                android:drawableTop="@drawable/photograph_btn_selector"
+                android:gravity="center"
+                android:text="@string/photograph"
+                android:textColor="@color/more_trans"
+                android:textSize="@dimen/font_size_s"/>
+
+            <TextView
+                android:id="@+id/file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_toRightOf="@+id/photo"
+                android:drawablePadding="8dip"
+                android:drawableTop="@drawable/btn_wenjian_selector"
+                android:gravity="center"
+                android:text="@string/file"
+                android:textColor="@color/more_trans"
+                android:textSize="@dimen/font_size_s"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <com.zuzhili.ui.views.AppPanel
+            android:id="@+id/chatting_app_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</FrameLayout>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">组织力</string>
+    <string name="action_settings">设置</string>
+    <string name="hello_world">欢迎</string>
+    <string name="ani_time">250</string>
+    <string name="ani_time2">500</string>
+
+    <!-- Splash Activity -->
+    <string name="check_network">正在检测网络</string>
+
+    <!-- HomeTab Activity -->
+    <!-- home tab wiget name -->
+    <string name="home_tab_feed">动态</string>
+    <string name="home_tab_msg_list">消息</string>
+    <string name="home_tab_contacts">通讯录</string>
+    <string name="home_tab_message">聊天</string>
+    <string name="home_tab_message_forward">转发选择</string>
+
+    <!-- Login Activity -->
+    <string name="login">登录</string>
+    <string name="input_account_hint">请输入邮箱或手机号</string>
+    <string name="input_password_hint">请输入密码</string>
+    <string name="input_characters_format_error">格式错误！请输入除汉字以外的其他字符</string>
+    <string name="account_name_required">请输入登录帐号</string>
+    <string name="account_password_required">请输入登陆密码</string>
+    <string name="right_phone_number_required">请输入正确的手机号码</string>
+    <string name="forgetpass">忘记密码</string>
+    <string name="choicesocial">请选择社区</string>
+
+    <!-- Download Manager -->
+    <string name="install_fail_file_not_exist">安装文件已不存在</string>
+
+    <!-- test strings -->
+    <string name="sample_content">Sample of dragging the content.\nThe menu consists of a ListView, for which the
+        active position is saved through configuration changes.\nAdditionally, if the menu is open, a back press will
+        close it.</string>
+    <string name="sample_layout">This sample shows how to use the drawer in a layout file.
+        \nThe top drawer is used in this sample.</string>
+
+    <!-- test menu strings -->
+    <string name="menu_refresh">刷新</string>
+    <string name="menu_search">搜索</string>
+    <string name="menu_share">分享</string>
+    <string name="action_bar_title">标题</string>
+    <!-- error  page -->
+    <string name="error_message">哎呀，出错了</string>
+    <string name="reason">可能原因：</string>
+    <string name="reason_hint_one">网络不稳定</string>
+    <string name="reason_hint_two">尚未接入互联网</string>
+    <string name="reason_hint_three">安全软件禁止访问网络</string>
+    <string name="error_refresh">刷新</string>
+    <string name="reset_network">设置网络</string>
+    <string name="click_to_load_older_message">网络有问题，点击重新载入</string>
+
+    <!-- 下拉刷新 -->
+    <string name="pull_to_refresh_pull_label">下拉可以刷新…</string>
+    <string name="more">更多</string>
+    <string name="loading">加载中…</string>
+    <string name="updatetime">更新于</string>
+    <string name="new_messages_count">%s条新消息</string>
+
+    <!-- listview -->
+    <string name="empty">空</string>
+
+    <!-- publish -->
+    <string name="publish_write">文字</string>
+    <string name="publish_pic">图片</string>
+    <string name="publish_music">音频</string>
+    <string name="publish_vedio">视频</string>
+    <string name="publish_file">文件</string>
+    <string name="publish_approval">审批</string>
+    <string name="select_title">标题（选填）</string>
+    <string name="select_content">内容</string>
+    <string name="publish_photoalbum_name">图片册名称（必填）</string>
+    <string name="publish_photoalbum_describe">图片册描述（选填）</string>
+    <string name="publish_file_name">文件夹名称（必填）</string>
+    <string name="publish_file_describe">文件夹描述（选填）</string>
+    <string name="edit_file_origin_name">文件原名称</string>
+    <string name="edit_file_describe">文件描述</string>
+    <string name="publish_priority_hint">仅成员可见</string>
+    <string name="upload_to">上传到:</string>
+    <string name="ablum_select_hint">请选择图片册</string>
+
+    <!-- 注册 -->
+    <string name="register">注册</string>
+    <string name="construction">新建</string>
+    <string name="inputemail">请输入邮箱</string>
+    <string name="inputpass">请输入密码</string>
+    <string name="truename">真实姓名</string>
+    <string name="phonenumber">手机号码</string>
+    <string name="phone_number_required">请输入手机号码</string>
+    <string name="phoneerror">手机号码错误</string>
+    <string name="validatephone">验证手机号</string>
+    <!-- forget password -->
+    <string name="get_request_code_hint">获取手机验证码</string>
+    <string name="input_request_code_hint">请输入6位验证码</string>
+    <string name="request_code_commit">验证</string>
+    <string name="forgot_pwd_toast_code_sended">验证码已发送</string>
+    <string name="forgot_pwd_toast_code_err">验证码错误</string>
+    <string name="inputusername">请输入姓名</string>
+
+    <!-- error message -->
+    <string name="can_not_get_session">不能获取session</string>
+    <string name="validate_code_required">请输入6位验证码</string>
+
+    <!-- password & feedback -->
+    <string name="old_password">旧密码</string>
+    <string name="new_password">新密码</string>
+    <string name="repeat_new_password">重复新密码</string>
+    <string name="changepass">修改密码</string>
+    <string name="submit">提交</string>
+    <string name="adviseback">意见反馈</string>
+    <string name="feedback">请写下您的问题或建议，感谢您的支持！</string>
+    <!-- about us -->
+    <string name="company">直立人科技公司版权所有</string>
+    <string name="rights">Copyright © 2012 zuzhili.com.All rights reserved</string>
+    <string name="companyphone">400-010-2010</string>
+    <string name="companyemail">service@zhiliren.com</string>
+    <string name="aboutus">关于我们</string>
+
+    <!-- news -->
+    <string name="dialog_filter_top_title">动态筛选</string>
+    <string name="news_filter_all">全部</string>
+    <string name="news_filter_word">文字</string>
+    <string name="news_filter_pic">图片</string>
+    <string name="news_filter_file">文件</string>
+    <string name="news_filter_music">音频</string>
+    <string name="news_filter_vedio">视频</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="relogin">重新登陆</string>
+    <string name="next_step">下一步</string>
+    <string name="news_all">全站动态</string>
+    <string name="news_my_focus">我关注的</string>
+    <string name="publish_image">传图片</string>
+    <string name="publish_text">发布文字</string>
+    <string name="publish_main">发布</string>
+    <string name="phone_cemara">相机拍摄</string>
+    <string name="phone_albums">手机相册</string>
+    <string name="select_resource">选择来源</string>
+    <string name="image_chosed_hint">此图片已选择</string>
+    <string name="image_chose_max_hint">最多可添加5张图片！</string>
+    <string name="add_image_desc">添加描述</string>
+    <string name="image_edit">图片编辑</string>
+    <string name="not_found_image">图片没有找到</string>
+    <string name="load_image_first_hint">请先加载图片</string>
+    <string name="image_desc_str_hint">最多允许输入200个字符</string>
+    <string name="image_desc_add_hint">请输入图片描述</string>
+    <string name="image_delete_hint">删除该图片？</string>
+    <string name="authority_hint">仅成员可见</string>
+    <string name="create_new_album">新建图片册</string>
+    <string name="create_new_chat">新建聊天</string>
+    <string name="album_name_str_hint">请输入图片册名称</string>
+    <string name="folder_name_str_hint">请输入文件夹名称</string>
+    <string name="album_name_length_hint">相册名称最多允许输入20个字符</string>
+    <string name="folder_name_length_hint">文件夹名称最多允许输入20个字符</string>
+    <string name="album_desc_length_hint">相册描述最多允许输入200个字符</string>
+    <string name="folder_desc_length_hint">文件夹描述最多允许输入200个字符</string>
+    <string name="create_success_hint">创建成功</string>
+    <string name="title_select_album">选择相册</string>
+    <string name="publish_success_hint">发布成功</string>
+    <string name="title_publish_music">传音频</string>
+    <string name="folder_select_hint">请选择文件夹</string>
+    <string name="folder_name_hint">文件夹名称（必填）</string>
+    <string name="folder_desc_hint">文件夹描述（选填）</string>
+    <string name="title_create_folder">新建文件夹</string>
+    <string name="title_select_music">选择音频</string>
+    <string name="music_size_hint">单个文件不能超过10MB哦！</string>
+    <string name="music_upload_count_hint">一次最多上传5个音频文件</string>
+    <string name="title_edit_file">文件编辑</string>
+    <string name="title_edit_music">音频编辑</string>
+    <string name="title_edit_vedio">视频编辑</string>
+    <string name="file_edit_name_hint">文件名太长了，不要超出30字哦！</string>
+    <string name="file_edit_desc_hint">描述太长了，不要超出200字哦！</string>
+    <string name="file_edit_name_null_hint">文件名不能为空哦！</string>
+    <string name="file_delete_hint">确定删除这个文件？</string>
+    <string name="sd_shared">请您先退出USB模式,再运行该应用</string>
+    <string name="sd_unmounted">SD卡未加载到手机</string>
+    <string name="sd_removed">此应用需要SD卡才能使用</string>
+    <string name="sd_noinsert">未找到SD卡</string>
+    <string name="list_refresh">视频列表已刷新！</string>
+    <string name="title_publish_vedio">发布视频</string>
+    <string name="delete_vedio_hint">删除该视频？</string>
+    <string name="select_folder_hint">请选择文件夹</string>
+    <string name="select_vedio_hint">请选择视频</string>
+    <string name="input_vedio_name_hint">请输入视频名称</string>
+    <string name="select_music_hint">请选择音频文件</string>
+    <string name="sending_hint">正在发送...</string>
+    <string name="select_album_hint">请选择图片册</string>
+    <string name="select_image_hint">请选择图片</string>
+    <string name="title_publish_file">传文件</string>
+    <string name="file_too_large_hint">单个文件大小不能超过10M,请重新选择</string>
+    <string name="action_repost">转发</string>
+    <string name="action_comment">评论</string>
+    <string name="action_collect">收藏</string>
+    <string name="title_select_vedio_hint">选择视频</string>
+
+    <!-- more -->
+    <string name="draftbox">草稿箱</string>
+    <string name="invitefriends">邀请好友</string>
+    <string name="logout">注销登录</string>
+    <string name="title_member">社区成员</string>
+    <string name="title_more">更多</string>
+
+    <!-- comment -->
+    <string name="hint_add_content">请输入内容</string>
+    <string name="publishevent">转发到首页</string>
+    <string name="publishtrend">同时评论</string>
+    <string name="title_trend_detail">动态详情</string>
+    <string name="send">发送</string>
+    <string name="voice_send">按住 说话</string>
+    <string name="photograph">拍摄</string>
+    <string name="photo">照片</string>
+    <string name="file">文件</string>
+    <string name="social_title_summary">社区资料</string>
+    <string name="createuser">创建人</string>
+    <string name="intro">简介</string>
+    <string name="social_name">社区名称</string>
+    <string name="social_memeber_count">社区人数</string>
+    <string name="social_your_name_required">请填写在该社区使用的名称</string>
+    <string name="social_apply_reason_required">请输入申请理由</string>
+    <string name="social_apply_confirm">申请</string>
+    <string name="social_apply">申请加入</string>
+    <string name="social_apply_cancel">取消</string>
+    <string name="sendsuccess">申请成功</string>
+    <string name="space_apply_reason_acquired">请输入申请理由</string>
+    <string name="social_request_err_not_long_enough">申请理由不能少于20个字符</string>
+    <string name="social_request_err_name">请输入名称</string>
+    <string name="reply">评论了</string>
+    <string name="reply_to">回复</string>
+    <string name="trend_not_exist">该条动态不存在，可能已经被删除</string>
+    <string name="title_reply_comment">回复</string>
+    <string name="title_publish_comment">发表评论</string>
+    <string name="passrestart">密码错误!请重新输入</string>
+    <string name="inputnewpass">请输入新密码</string>
+    <string name="inputoldpass">请输入旧密码</string>
+    <string name="passlimite">密码不能少于6位</string>
+    <string name="diffnumerror">旧密码和新密码输入的一样，请重新输入</string>
+    <string name="reinputpass">请再次输入新密码</string>
+    <string name="passsameerror">两次密码不相同</string>
+    <string name="changesuccess">修改成功</string>
+    <string name="passtypeerror">密码格式错误！请输入除汉字以外的其他字符</string>
+    <string name="title_edit_repost">转发编辑</string>
+    <string name="delete_comment_success">删除评论成功</string>
+    <string name="thistitle">这是标题</string>
+    <string name="articledetail">文章详情</string>
+    <string name="title_at_me">提到我的</string>
+    <string name="title_my_comments">我的评论</string>
+    <string name="title_my_message">聊天</string>
+    <string name="publish_failed_hint">发布失败</string>
+    <string name="contentapproval">内容审批</string>
+    <string name="approval_yes">同意</string>
+    <string name="approval_no">拒绝</string>
+    <string name="approval_edit">编辑</string>
+    <string name="approval_from">来自Anroid客户端</string>
+    <string name="approval_records">审批记录</string>
+    <string name="approval_detail">审批详情</string>
+    <string name="news_time">2012-9-10 18:00</string>
+    <string name="title_message_list">消息</string>
+    <string name="desc_front">共有</string>
+    <string name="desc_end">条动态</string>
+    <string name="followers">关注</string>
+    <string name="fans">粉丝</string>
+    <string name="collect">收藏</string>
+    <string name="pictures">图片</string>
+    <string name="audio">音频</string>
+    <string name="video">视频</string>
+    <string name="todo">任务</string>
+    <string name="personal_resource">个人资料</string>
+    <string name="file_library">资料库</string>
+    <string name="action_follow">关注</string>
+    <string name="action_unfollow">取消关注</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_contacts">AddContactsActivity</string>
+    <string name="group_chat">群聊</string>
+    <string name="select_one_group">选择一个群</string>
+    <string name="new_msg_notification">新消息通知</string>
+    <string name="new_msg_clear">清空聊天记录</string>
+    <string name="new_msg_notification_title">组织力</string>
+    <string name="dissovle_group">删除并退出</string>
+    <string name="title_group_chat_settings">删除并退出后，将不再接收此聊天信息</string>
+    <string name="title_group_chat_settings_title">聊天设置</string>
+    <string name="tag_group_name">群聊名称</string>
+    <string name="group_name_not_set">未命名</string>
+    <string name="select_group">选择群聊</string>
+    <string name="new_version_alert">有新版本了</string>
+    <string name="im_creating_group_chat">正在发起群聊</string>
+    <string name="hint_wait_a_moment">请稍后</string>
+    <string name="hint_dissolve_group">删除该群后，将不再接收此群消息,确定删除?</string>
+    <string name="title_invite_contact">邀请好友</string>
+    <string name="inviate">邀请</string>
+    <string name="hint_verification_code_sended">验证码已发送</string>
+    <string name="title_vote">全部投票</string>
+    <string name="title_vote_detail">详情</string>
+    <string name="title_create_chat_room">添加参与人</string>
+    <string name="str_dialog_title">提示</string>
+    <string name="str_regist_again">长时间未登录,请重新注册...</string>
+    <string name="dialog_btn">确定</string>
+    <string name="account_offline_notify">下线通知</string>
+    <string name="media_ejected">储存卡已拔出，语音功能将暂时不可用</string>
+    <string name="toast_local_voice_file_does_not_exist">本地语音文件不存在或已经删除</string>
+    <string name="voice">语音</string>
+    <string name="voice_cancel_rcd">手指上滑，取消发送</string>
+    <string name="toast_recode_is_to_short">时间太短   录音失败</string>
+    <string name="voice_cancel_rcd_end">松开 结束</string>
+    <string name="voice_cancel_rcd_release">松开手指，取消发送</string>
+    <string name="voice_listen_earpiece">当前为(听筒 )播放语音模式</string>
+    <string name="voice_listen_speaker">当前为 (扬声器)播放语音模式</string>
+    <string name="sdcard_not_file_trans_disable">无SD卡，无法发送文件！</string>
+    <string name="toast_file_exist">选择的文件本地不存在或者已经删除</string>
+    <string name="btn_title_back">返回</string>
+    <string name="app_title_file_browser">选择文件</string>
+    <string name="empty_folder">当前文件夹没有文件</string>
+    <string name="choose_uploadfile_invalidate">该文件为无效文件</string>
+    <string name="file_name">文件名称：</string>
+    <string name="file_size">文件大小：</string>
+    <string name="title_confirm_send">是否发送该文件？</string>
+    <string name="dialog_cancle_btn">取消</string>
+    <string name="chatting_rcd_time_limit">录音时间还剩%d秒</string>
+    <string name="str_dialog_message_default">处理中,请稍候...</string>
+    <string name="clear">清空</string>
+    <string name="copy">复制</string>
+    <string name="forword">转发</string>
+    <string name="tag_group_declared">群组公告</string>
+    <string name="tag_group_declared_hint">请输入群组公告(100个汉字以内)</string>
+    <string name="gallery_photo">预览(0)</string>
+    <string name="choose_gallery">所有图片</string>
+    <string name="choose">选择</string>
+    <string name="nothing">群聊名称不能为空</string>
+    <string name="notitle">暂未设置</string>
+    <string name="rule">群名称不能超过45个汉字。</string>
+    <string name="msg_more">输入内容超过限制</string>
+    <string name="timeout_create_group_failed">请求超时，创建群组失败</string>
+    <string name="hint_create_group_failed">创建群组失败</string>
+    <string name="timeout_icon_failed">加载超时，请重试</string>
+    <string name="hint_account_login_somewhere">您的账号在其他地方已经登录，点击重新登录？</string>
+    <string name="notification_content_new_missing_letter_count">%1$d个联系人发来了%2$d条消息</string>
+    <string name="chat_not_login">未连接</string>
+    <string name="chat_activity">.ui.activity.im.GroupChatActivity</string>
+    <string name="home_activity">.ui.activity.HomeTabActivity</string>
+    <string name="R.string.createchat">创建新聊天</string>
+    <string name="R.string.chatlist">最近聊天</string>
+    <string name="forwardto">确定转发到:</string>
+    <string name="pathFile">储存环境创环境失败</string>
+    <string name="receive_voice_msg">%s发来一段语音</string>
+    <string name="receive_image_msg">%s发来一张照片</string>
+    <string name="receive_text_msg">%s发来一条消息</string>
+    <string name="new_group">新群组</string>
+    <string name="new_user">新用户</string>
+    <string name="titile_social_manage">社区广场</string>
+    <string name="giveup_edit">放弃此次编辑?</string>
+    <string name="if_save_to_draftbox">内容尚未发送，是否保存草稿？</string>
+    <string name="title_activity_groups">GroupsActivity</string>
+    <string name="sure_resend">确认重发该消息?</string>
+    <string name="coopration_category_vote">投票</string>
+    <string name="system_category_more">更多</string>
+    <string name="communication_category_commu">沟通</string>
+    <string name="category_communication">沟通</string>
+    <string name="category_cooperation">协作</string>
+    <string name="category_system">系统</string>
+    <string name="image_out">您最多只能选择9张照片</string>
+    <string name="no_description">暂无描述</string>
+    <string name="preview">预览</string>
+    <string name="ndescription_tolong">描述不能超出200个字</string>
+    <string name="picture_comment">图片评论</string>
+    <string name="title_activity_common_space">CommonSpaceActivity</string>
+    <string name="title_activity_contact_list">ContactListActivity</string>
+    <string name="title_activity_common_trend">CommonTrendActivity</string>
+    <string name="album">的图片册</string>
+    <string name="alreadySave">图片已保存至组织力文件夹</string>
+    <string name="image_save_file">图片保存失败,请稍后重试</string>
+    <string name="guide_first_top">社区广场</string>
+    <string name="guide_first_buttom">寻找组织,申请加入</string>
+    <string name="guide_second_top">聊天</string>
+    <string name="guide_second_buttom">全方位支持私聊群聊,语音图片,随时畅聊</string>
+    <string name="guide_third_top">通讯录</string>
+    <string name="guide_third_buttom">全新的分类通讯录,找人更轻松</string>
+    <string name="guide_dirs">互联网信息化管理平台</string>
+    <string name="guide_start">开启组织力</string>
+
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="check_network_connectivity">无网络连接，请检查网络</string>
+    <string name="ok">确定</string>
+
+
+    <string name="delete_conversation">删除该聊天</string>
+    <string name="title_vips_hall">会员大厅</string>
+</resources>

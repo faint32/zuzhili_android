@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.cloopen.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:focusable="true"
+              android:gravity="left"
+              android:orientation="vertical"
+              android:paddingRight="120.0dip"
+              android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/talk_left_bg"
+        android:orientation="vertical"
+        android:paddingBottom="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="6.0dip"
+        android:paddingTop="2dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/im_chat_ly_l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.0dip"
+                    android:gravity="center"
+                    android:paddingLeft="5.0dip">
+
+                    <ImageView
+                        android:id="@+id/im_chatting_file_icon_l"
+                        android:layout_width="32.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8.0dip"
+                        android:layout_marginRight="8.0dip"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/talk_box_file_icon"/>
+
+                    <com.zuzhili.ui.views.FaceTextView
+                        android:id="@+id/file_name_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/im_chatting_file_icon_l"
+                        android:gravity="left|center"
+                        android:lineSpacingExtra="2.0dip"
+                        android:maxWidth="225.0dip"
+                        android:minHeight="49.0dip"
+                        android:singleLine="false"
+                        android:layout_marginRight="4dip"
+                        android:text="未知"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/im_chat_pic_l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dip"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

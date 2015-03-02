@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zuzhili.ui.views.PullRefreshListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/talkpair_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:cacheColorHint="@color/transparent"
+    android:background="@color/page_bg"
+    android:clickable="false"
+    android:divider="@color/news_item_divider"
+    android:dividerHeight="1dip"
+    android:fadingEdge="none" />

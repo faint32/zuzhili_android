@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/but_sure_pressed">
+
+
+    <ImageView
+        android:id="@+id/point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/point_third"/>
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/point"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:text="@string/guide_third_top"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:text="@string/guide_third_buttom"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/guide_third"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:id="@+id/guide_to_login"
+        android:background="#80ffffff"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#80c9c9ce"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="43dp"
+            android:textColor="@color/text_desc"
+            android:textSize="30sp"
+            android:text="@string/new_msg_notification_title"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="21dp"
+            android:textColor="@color/more_trans"
+            android:textSize="16sp"
+            android:text="@string/guide_dirs"/>
+
+
+        <Button
+            android:id="@+id/btn_go_login"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/guide_start"
+            android:textSize="19sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="@color/guide_start_button"/>
+    </LinearLayout>
+</RelativeLayout>

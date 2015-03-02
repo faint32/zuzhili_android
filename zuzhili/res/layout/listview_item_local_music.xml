@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/select_cbx"
+        style="@style/mycheckbox"
+        android:checked="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_height="wrap_content"
+         />
+
+    <LinearLayout
+        android:layout_marginLeft="14.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/music_name_tv"
+            android:layout_width="fill_parent"
+            android:paddingLeft="4.0dip"
+            android:paddingBottom="4.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/size_tv"
+            android:paddingLeft="4.0dip"
+            android:paddingBottom="4.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dip"
+            android:textColor="#787878"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

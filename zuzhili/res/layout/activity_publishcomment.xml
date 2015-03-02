@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fla_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:background="@color/page_bg"
+    android:orientation="vertical">
+
+    <com.zuzhili.ui.views.CCPEditText
+        android:id="@+id/edit_publish_write_content"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_above="@+id/lla_bottom"
+        android:background="#00000000"
+        android:gravity="top|left"
+        android:hint="@string/hint_add_content"
+        android:lineSpacingExtra="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dip"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/lla_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/line_two"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_above="@+id/job_buttom"
+            android:background="#dedede" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/send_option"
+            style="@style/mycheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:paddingLeft="10dp"
+            android:text="@string/publishevent"
+            android:textSize="14sp"
+            android:textColor="@color/webo_text_color"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/img_well"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="33dp"
+            android:layout_toLeftOf="@+id/focus_img"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/edit_ht_selector"/>
+
+        <ImageView
+            android:id="@+id/focus_img"
+            android:layout_toLeftOf="@+id/face_img"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="33dp"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:src="@drawable/edit_at_selector" />
+
+        <ImageView
+            android:id="@+id/face_img"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="17dp"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/face_btn_selector" />
+    </RelativeLayout>
+
+    <com.zuzhili.ui.views.AppPanel
+        android:id="@+id/chatting_app_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+
+    </LinearLayout>
+
+</RelativeLayout>

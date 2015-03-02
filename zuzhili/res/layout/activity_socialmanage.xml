@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/foreground_white_with_shadow"
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="7.5dp"
+        android:paddingBottom="14dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:contentDescription="@null"
+                android:id="@+id/img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/photo_200" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:paddingLeft="7.5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/socialsummary_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/socialsummary_creater"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/socialmembercount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/socialsummary_summary"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="14dp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/socialsummary_add"
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:background="@drawable/blue_btn_selector"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:text="@string/social_apply"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+</LinearLayout>

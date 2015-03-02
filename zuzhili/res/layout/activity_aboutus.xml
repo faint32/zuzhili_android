@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/foreground_item_grey"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:contentDescription="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/logo_blank" />
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/more_item_text" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="80dp"
+            android:paddingLeft="20dp"
+             android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/edit_text_backgroud"
+            android:drawableLeft="@drawable/phone_selector"
+            android:drawablePadding="5dp"
+            android:text="@string/companyphone"
+            android:textColor="@color/more_item_text" 
+            android:autoLink="phone"
+            />
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="19dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/edit_text_backgroud"
+            android:drawableLeft="@drawable/sms_selector"
+            android:drawablePadding="5dp"
+            android:text="@string/companyemail"
+            android:textColor="@color/more_item_text" 
+            android:autoLink="email"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_above="@+id/tv_rights"
+            android:id="@+id/tv_company"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/company"
+            android:textColor="@color/light_grey"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tv_rights"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/rights"
+            android:textColor="@color/light_grey"
+            android:textSize="9sp" />
+    </RelativeLayout>
+
+</LinearLayout>

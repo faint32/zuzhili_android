@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zuzhili="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:id="@+id/rootLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <com.zuzhili.ui.views.BezelImageView
+                android:id="@+id/iv_space_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13.3dp"
+                android:clickable="true"
+                android:src="@drawable/default_user_head_small"
+                zuzhili:borderDrawable="@drawable/circle_border_space"
+                zuzhili:maskDrawable="@drawable/circle_mask"/>
+
+            <TextView
+                android:id="@+id/tv_space_title"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_above="@+id/bt_space_action"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="13.3dp"
+                android:layout_toRightOf="@+id/iv_space_icon"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textSize="17sp"/>
+
+            <Button
+                android:id="@+id/bt_space_action"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignBottom="@+id/iv_space_icon"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="13.3dp"
+                android:layout_toEndOf="@+id/iv_space_icon"
+                android:layout_toRightOf="@+id/iv_space_icon"
+                android:background="@drawable/space_button_selector_positive"
+                android:textSize="12sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#dadddf"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_space_im"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:divider="@drawable/shape_layout_divider_hor"
+                android:showDividers="middle">
+
+                <ImageButton
+                    android:id="@+id/ib_action_call"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_space_button"
+                    android:src="@drawable/space_make_call_selector"/>
+
+                <ImageButton
+                    android:id="@+id/ib_action_chat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_space_button"
+                    android:src="@drawable/space_start_chat_selector"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dadddf"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_space_follow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:divider="@drawable/shape_layout_divider_hor"
+                android:showDividers="middle">
+
+                <Button
+                    android:id="@+id/bt_space_follow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_space_button"
+                    android:text="关注"
+                    android:textSize="15sp"/>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/bt_space_be_follow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_space_button"
+                        android:text="被关注"
+                        android:textSize="15sp"/>
+
+                    <View
+                        android:id="@+id/placeholder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dadddf"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

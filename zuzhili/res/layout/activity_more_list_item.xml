@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_more_item"
+                android:layout_width="fill_parent"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/more_item_selector"
+                android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_wrap_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="27.5dp"
+        android:layout_marginRight="17.5dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:contentDescription="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/rl_right_region"
+        android:layout_toRightOf="@+id/ll_wrap_icon"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/more_item_text"
+        android:textSize="17sp" />
+
+    <RelativeLayout 
+        android:id="@+id/rl_right_region"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_width="25dp"
+        android:layout_marginRight="17.5dp"
+        android:layout_height="fill_parent">
+	    <ImageView 
+	        android:id="@+id/iv_go"
+	        android:contentDescription="@null"
+	        android:src="@drawable/more_icon_rightback"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="visible"/>
+	    
+	    <Button 
+	        android:id="@+id/bt_hint"
+	        android:background="@drawable/trend_back02"
+	        android:textSize="12sp"
+	        android:textColor="@color/white"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:focusable="false"
+	        android:clickable="false"
+	        android:visibility="visible"/>
+    </RelativeLayout>
+
+</RelativeLayout>
